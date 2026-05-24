@@ -9,6 +9,15 @@ pipeline {
       stage('checkout') {
         steps { checkout scm }
       }
+
+      stage('verify') {
+        parallel {
+          stage('unit')        { steps { sh 'echo mvn test' } }
+          stage('lint')        { steps { sh 'echo mvn checkstyle:check' } }
+          stage('security')    { steps { sh 'echo trivy fs --severity HIGH .' } }
+        }
+      }
+
       stage('build') {
         steps { sh 'echo ./build.sh' }
       }
@@ -25,7 +34,7 @@ pipeline {
             expression { params.ENV == 'prod' }
           }
         }
-        steps { sh './deploy-prod.sh' }
+        steps { sh 'echo ./deploy-prod.sh' }
       }
     }
 }
