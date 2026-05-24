@@ -21,7 +21,7 @@ pipeline {
       stage('deploy prod') {
         when {
           allOf {
-            branch 'main'
+            expression { params.BRANCH == 'main' }
             expression { params.ENV == 'prod' }
           }
         }
