@@ -109,7 +109,7 @@ A multibranch project automatically:
 - Runs the `Jenkinsfile` from that branch.
 - Removes sub-jobs when branches are deleted.
 
-This is the modern default for team projects. We cover the configuration depth in Module 08 (Pipeline as Code), but it's worth knowing now that you typically wire SCM up *once*, at the multibranch level, instead of repeating it per branch.
+This is the modern default for team projects. We cover the configuration depth in Module 07 (Pipeline as Code), but it's worth knowing now that you typically wire SCM up *once*, at the multibranch level, instead of repeating it per branch.
 
 ## 7. Behaviors and Strategy Options
 

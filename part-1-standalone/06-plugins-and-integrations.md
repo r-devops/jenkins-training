@@ -227,4 +227,4 @@ You get per-file issue trends and threshold gates.
 5. Why is "audit installed plugins" a quarterly hygiene task?
 
 ## What's Next
-**Module 07** covers Deployment & Release workflows — using Jenkins to deliver software to servers and cloud targets.
+**Module 07** introduces Pipeline as Code — defining your build in a `Jenkinsfile` checked into Git.

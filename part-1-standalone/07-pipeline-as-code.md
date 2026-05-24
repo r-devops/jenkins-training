@@ -1,4 +1,4 @@
-# Module 08 — Pipeline as Code
+# Module 07 — Pipeline as Code
 
 ## Learning Objectives
 - Explain why Pipeline as Code is the modern Jenkins default.
@@ -306,4 +306,4 @@ pipeline {
 5. How do you move build outputs from one stage's agent to another?
 
 ## What's Next
-**Module 09** goes deep on advanced pipeline patterns — input, matrix, retries, error handling, optimization.
+**Module 08** goes deep on advanced pipeline patterns — input, matrix, retries, error handling, optimization.

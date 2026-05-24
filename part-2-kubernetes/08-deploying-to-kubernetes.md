@@ -280,7 +280,7 @@ If health fails:
 - For Helm: `helm rollback payments-api 0 -n payments-prod`.
 - For raw: `kubectl rollout undo deployment payments-api`.
 
-Make rollback a *separately runnable* parameterized job (Part 1 Module 07). Promote and rollback use the same code path with different image tags.
+Make rollback a *separately runnable* parameterized job (Part 1 Module 09). Promote and rollback use the same code path with different image tags.
 
 ## 11. Hands-On Exercise
 

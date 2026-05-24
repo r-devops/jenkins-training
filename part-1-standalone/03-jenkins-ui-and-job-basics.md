@@ -35,7 +35,7 @@ When you click **New Item**, Jenkins lists job types. The most useful:
 | Folder | A container for organizing jobs. |
 | Organization Folder | Auto-discovers repos across a GitHub/GitLab org. |
 
-We focus on **Freestyle** here for the fundamentals. Pipelines get a deep dive in Module 08.
+We focus on **Freestyle** here for the fundamentals. Pipelines get a deep dive in Module 07.
 
 ## 3. Your First Freestyle Job
 
