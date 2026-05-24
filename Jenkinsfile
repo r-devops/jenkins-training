@@ -37,4 +37,9 @@ pipeline {
         steps { sh 'echo ./deploy-prod.sh' }
       }
     }
+
+    post {
+      success  { slackSend channel: '#general', color: 'good', message: "OK ${env.JOB_NAME} #${env.BUILD_NUMBER}" }
+      cleanup  { cleanWs() }
+    }
 }
