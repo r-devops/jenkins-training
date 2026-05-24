@@ -15,6 +15,7 @@ pipeline {
       stage('test') {
         steps {
           sh 'echo ./run-tests.sh'
+          sh 'env'
         }
       }
       stage('deploy prod') {
