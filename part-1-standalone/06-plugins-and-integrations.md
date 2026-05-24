@@ -26,7 +26,7 @@
 ### Pinning and rollback
 - To pin a version: download the specific `.hpi` from `plugins.jenkins.io` and **Advanced → Deploy Plugin**.
 - To roll back: stop Jenkins, replace the `.hpi`/`.jpi` in `JENKINS_HOME/plugins/`, start Jenkins.
-- Plugins as code (Module 14) makes this much cleaner.
+- Plugins as code (Module 12) makes this much cleaner.
 
 ### Dependency hell
 Plugins depend on other plugins and on core Jenkins. The Plugin Manager will tell you about missing or incompatible dependencies. The **Plugin Health Score** on `plugins.jenkins.io` is a useful sanity check before adopting an unfamiliar plugin.
@@ -227,4 +227,4 @@ You get per-file issue trends and threshold gates.
 5. Why is "audit installed plugins" a quarterly hygiene task?
 
 ## What's Next
-**Module 07** dives into Security & User Management — authentication, authorization, credentials, and securing the controller.
+**Module 07** covers Deployment & Release workflows — using Jenkins to deliver software to servers and cloud targets.

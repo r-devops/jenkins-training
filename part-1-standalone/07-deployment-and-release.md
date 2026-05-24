@@ -1,4 +1,4 @@
-# Module 09 — Deployment & Release Workflows
+# Module 07 — Deployment & Release Workflows
 
 ## Learning Objectives
 - Deploy to Linux/Windows servers from Jenkins.
@@ -36,7 +36,7 @@ flowchart LR
     class H gate
 ```
 
-Each step is a stage in your pipeline (Module 10). Each environment has its own credentials, target hosts, and validation.
+Each step is a stage in your pipeline (Module 08). Each environment has its own credentials, target hosts, and validation.
 
 ### Promotion vs rebuild
 **Always deploy the same artifact you tested.** Rebuilding from source between environments introduces drift. Build once, store in an artifact repository, promote by reference (version number or SHA).
@@ -173,7 +173,7 @@ Send a small fraction of traffic (e.g., 5%) to the new version, watch error rate
 
 Production deploys usually want a human in the loop.
 
-### `input` step (covered in Module 11 in depth)
+### `input` step (covered in Module 09 in depth)
 ```groovy
 stage('deploy prod') {
   steps {
@@ -184,7 +184,7 @@ stage('deploy prod') {
 }
 ```
 
-The pipeline pauses until someone in the `release-managers` group clicks Proceed (or Abort). The build holds an executor while waiting — for long pauses, see Module 11 on releasing the executor.
+The pipeline pauses until someone in the `release-managers` group clicks Proceed (or Abort). The build holds an executor while waiting — for long pauses, see Module 09 on releasing the executor.
 
 ### Change tickets
 - Add a step to create/close a ticket in your change management system (ServiceNow, Jira) via REST.
@@ -264,4 +264,4 @@ retry(10) {
 5. Why turn rollback into a parameterized job rather than a separate code path?
 
 ## What's Next
-You've finished Section B. Section C is **everything-as-code**. **Module 10** introduces Pipelines and the `Jenkinsfile`.
+You've finished Section B. Section C is **everything-as-code**. **Module 08** introduces Pipelines and the `Jenkinsfile`.

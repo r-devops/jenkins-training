@@ -1,4 +1,4 @@
-# Module 12 — Shared Libraries
+# Module 10 — Shared Libraries
 
 ## Learning Objectives
 - Understand why Shared Libraries exist and when to use them.
@@ -262,4 +262,4 @@ Three lines. The platform team owns the rest.
 5. What's one risk of consuming a library by branch name instead of tag?
 
 ## What's Next
-**Module 13** covers JCasC — managing the Jenkins controller's configuration as code.
+**Module 11** covers JCasC — managing the Jenkins controller's configuration as code.

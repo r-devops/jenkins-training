@@ -1,4 +1,4 @@
-# Module 11 — Advanced Pipelines
+# Module 09 — Advanced Pipelines
 
 ## Learning Objectives
 - Pause pipelines for human input and approvals.
@@ -112,7 +112,7 @@ stage('integration') {
 }
 ```
 
-Pipeline-level timeout (Module 10):
+Pipeline-level timeout (Module 08):
 ```groovy
 options { timeout(time: 1, unit: 'HOURS') }
 ```
@@ -194,7 +194,7 @@ pipeline {
 }
 ```
 
-When functions are used across many pipelines, promote them to a Shared Library (Module 12).
+When functions are used across many pipelines, promote them to a Shared Library (Module 10).
 
 ## 8. Pipeline Performance Tips
 
@@ -302,7 +302,7 @@ pipeline {
 
 ## 11. Hands-On Exercise
 
-1. Take your Module 10 pipeline.
+1. Take your Module 08 pipeline.
 2. Add a `matrix` stage that runs tests against JDK 17 and JDK 21.
 3. Add an `input` step before "deploy", configured with `agent none` so it doesn't hold an executor.
 4. Wrap the deploy in `lock` and `retry`.
@@ -316,4 +316,4 @@ pipeline {
 5. Name three concrete pipeline performance optimizations.
 
 ## What's Next
-**Module 12** covers Shared Libraries — the way to share pipeline code across many projects.
+**Module 10** covers Shared Libraries — the way to share pipeline code across many projects.

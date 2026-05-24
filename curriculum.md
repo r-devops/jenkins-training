@@ -20,17 +20,15 @@ The curriculum is split into two parts. Each module is a standalone `.md` file i
 - [04 — Source Code Management](part-1-standalone/04-source-code-management.md)
 - [05 — Standalone Agents (Build Nodes)](part-1-standalone/05-standalone-agents.md)
 - [06 — Plugins & Integrations](part-1-standalone/06-plugins-and-integrations.md)
-- [07 — Security & User Management](part-1-standalone/07-security-and-user-management.md)
-- [08 — Operations on a Standalone Server](part-1-standalone/08-operations.md)
-- [09 — Deployment & Release Workflows](part-1-standalone/09-deployment-and-release.md)
+- [07 — Deployment & Release Workflows](part-1-standalone/07-deployment-and-release.md)
 
 ### Section C: Everything-as-Code
-- [10 — Pipeline as Code](part-1-standalone/10-pipeline-as-code.md)
-- [11 — Advanced Pipelines](part-1-standalone/11-advanced-pipelines.md)
-- [12 — Shared Libraries](part-1-standalone/12-shared-libraries.md)
-- [13 — Configuration as Code (JCasC)](part-1-standalone/13-configuration-as-code.md)
-- [14 — Jobs & Plugins as Code](part-1-standalone/14-jobs-and-plugins-as-code.md)
-- [15 — Part 1 Capstone](part-1-standalone/15-capstone.md)
+- [08 — Pipeline as Code](part-1-standalone/08-pipeline-as-code.md)
+- [09 — Advanced Pipelines](part-1-standalone/09-advanced-pipelines.md)
+- [10 — Shared Libraries](part-1-standalone/10-shared-libraries.md)
+- [11 — Configuration as Code (JCasC)](part-1-standalone/11-configuration-as-code.md)
+- [12 — Jobs & Plugins as Code](part-1-standalone/12-jobs-and-plugins-as-code.md)
+- [13 — Part 1 Capstone](part-1-standalone/13-capstone.md)
 
 ---
 

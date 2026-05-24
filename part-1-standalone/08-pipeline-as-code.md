@@ -1,4 +1,4 @@
-# Module 10 — Pipeline as Code
+# Module 08 — Pipeline as Code
 
 ## Learning Objectives
 - Explain why Pipeline as Code is the modern Jenkins default.
@@ -188,7 +188,7 @@ post {
 
 ## 11. Credentials in Pipelines
 
-Already mentioned in Module 07; for completeness:
+Use Jenkins-stored credentials inside a pipeline via `withCredentials` (the value is masked in the console log automatically):
 ```groovy
 stage('publish') {
   steps {
@@ -289,7 +289,7 @@ pipeline {
 - Use **Pipeline Syntax** (link on the side of any pipeline job) — a snippet generator that builds the Groovy for any step.
 - The **Replay** feature lets you run a modified version of a pipeline without committing — fast for iteration; never your final answer.
 - Use `options { timeout(...) }` to keep runaway builds from hogging executors.
-- Keep `Jenkinsfile` small; push complexity into shell scripts or shared libraries (Module 12).
+- Keep `Jenkinsfile` small; push complexity into shell scripts or shared libraries (Module 10).
 
 ## 15. Hands-On Exercise
 
@@ -306,4 +306,4 @@ pipeline {
 5. How do you move build outputs from one stage's agent to another?
 
 ## What's Next
-**Module 11** goes deep on advanced pipeline patterns — input, matrix, retries, error handling, optimization.
+**Module 09** goes deep on advanced pipeline patterns — input, matrix, retries, error handling, optimization.

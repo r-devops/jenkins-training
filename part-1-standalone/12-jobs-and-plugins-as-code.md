@@ -1,4 +1,4 @@
-# Module 14 — Jobs & Plugins as Code
+# Module 12 — Jobs & Plugins as Code
 
 ## Learning Objectives
 - Generate jobs programmatically with the Job DSL plugin.
@@ -8,7 +8,7 @@
 
 ## 1. Why Jobs as Code?
 
-JCasC (Module 13) configures the controller. But the *jobs* themselves still live in `JENKINS_HOME/jobs/`. If you click "New Item" in the UI to create a job, that job is invisible to Git.
+JCasC (Module 11) configures the controller. But the *jobs* themselves still live in `JENKINS_HOME/jobs/`. If you click "New Item" in the UI to create a job, that job is invisible to Git.
 
 There are two ways to manage jobs as code:
 1. **Job DSL plugin** — write Groovy that produces job definitions.
@@ -233,7 +233,7 @@ Now: build the image, deploy it. The controller starts up fully configured. To c
 | Plugins | `plugins.txt` + `jenkins-plugin-cli` |
 | Folders, seed jobs, admin jobs | Job DSL |
 | Application pipelines | `Jenkinsfile` in each app repo, consumed by Multibranch |
-| Shared logic | Shared Library (Module 12) |
+| Shared logic | Shared Library (Module 10) |
 | Build agents | JCasC (permanent) or Cloud configs |
 
 ## 10. Hands-On Exercise
@@ -252,4 +252,4 @@ Now: build the image, deploy it. The controller starts up fully configured. To c
 5. What's the goal of the bootstrap pattern?
 
 ## What's Next
-**Module 15** is the Part 1 capstone — build a complete, code-managed, standalone Jenkins from scratch.
+**Module 13** is the Part 1 capstone — build a complete, code-managed, standalone Jenkins from scratch.

@@ -216,7 +216,7 @@ spec:
 The Jenkins Kubernetes Credentials Provider plugin picks this up if you add the label `jenkins.io/credentials-type: usernamePassword`.
 
 ### HashiCorp Vault directly
-The **HashiCorp Vault** Jenkins plugin (Module 07 in Part 1) works on Kubernetes too. Authenticate via the Kubernetes auth method (the controller's ServiceAccount token).
+The **HashiCorp Vault** Jenkins plugin works on Kubernetes too. Authenticate via the Kubernetes auth method (the controller's ServiceAccount token).
 
 ### Sealed Secrets / SOPS
 For GitOps shops that want to commit secret YAML to Git, Sealed Secrets and SOPS-encrypted Secrets are common patterns. The encryption key lives in the cluster; only the cluster can decrypt.

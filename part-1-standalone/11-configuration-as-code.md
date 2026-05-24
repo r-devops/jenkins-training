@@ -1,4 +1,4 @@
-# Module 13 — Configuration as Code (JCasC)
+# Module 11 — Configuration as Code (JCasC)
 
 ## Learning Objectives
 - Explain why Jenkins controller configuration belongs in Git.
@@ -251,4 +251,4 @@ Alternative: bake `jenkins.yaml` into the controller's container image. The imag
 5. Why pin plugin versions when adopting JCasC?
 
 ## What's Next
-**Module 14** continues the everything-as-code thread with Job DSL and plugin-management-as-code.
+**Module 12** continues the everything-as-code thread with Job DSL and plugin-management-as-code.

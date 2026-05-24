@@ -16,7 +16,7 @@ On Kubernetes, "config as code" means: **the cluster contains nothing you didn't
 |-------|----------|-------------|
 | Cluster shape | `values.yaml`, manifests | Helm |
 | Controller config | `jenkins.yaml` (JCasC) | ConfigMap mounted into the controller |
-| Jobs | Job DSL scripts | Seed pipeline (Part 1 Module 14) |
+| Jobs | Job DSL scripts | Seed pipeline (Part 1 Module 12) |
 
 All three live in a single `jenkins-config` Git repo (or a small number of related repos).
 
@@ -186,7 +186,7 @@ Combined with ESO/Sealed Secrets, credentials become reproducible — no clickin
 
 ## 7. Job DSL via JCasC
 
-Bootstrap the seed job (Module 14, Part 1) from JCasC:
+Bootstrap the seed job (Module 12, Part 1) from JCasC:
 
 ```yaml
 configScripts:

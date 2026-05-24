@@ -41,7 +41,7 @@ Each folder:
 
 ## 3. Role-Based Authorization for Folders
 
-With the **Role-Based Strategy** plugin (Module 07, Part 1):
+With the **Role-Based Strategy** plugin:
 
 ```yaml
 authorizationStrategy:
@@ -137,7 +137,7 @@ A separate `library-smoke` repo and pipeline exercises every public step against
 
 ## 6. Pipeline Templates
 
-A platform pipeline template (from Module 12, Part 1) lets a team's `Jenkinsfile` be three lines:
+A platform pipeline template (from Module 10, Part 1) lets a team's `Jenkinsfile` be three lines:
 ```groovy
 @Library('acme-ci@v1') _
 javaService(appName: 'payments-api')
