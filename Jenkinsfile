@@ -14,7 +14,7 @@ pipeline {
       }
       stage('test') {
         steps {
-          sh echo './run-tests.sh'
+          sh 'echo ./run-tests.sh'
         }
       }
       stage('deploy prod') {
