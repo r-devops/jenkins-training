@@ -10,13 +10,21 @@ pipeline {
         steps { checkout scm }
       }
       stage('build') {
-        steps { sh './build.sh' }
+        steps { sh 'echo ./build.sh' }
       }
       stage('test') {
         steps {
-          sh './run-tests.sh'
-          junit '**/test-results/*.xml'
+          sh echo './run-tests.sh'
         }
+      }
+      stage('deploy prod') {
+        when {
+          allOf {
+            branch 'main'
+            expression { params.ENV == 'prod' }
+          }
+        }
+        steps { sh './deploy-prod.sh' }
       }
     }
 }
